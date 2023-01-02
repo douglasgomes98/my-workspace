@@ -1,0 +1,144 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+  "breadcrumbs.enabled": true,
+
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 20,
+  "editor.fontFamily": "Fira Code, JetBrains Mono, Cascadia Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.parameterHints.enabled": false,
+  "editor.rulers": [80, 120],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+    // "source.organizeImports": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.accessibilitySupport": "off",
+  // "editor.formatOnPaste": true,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+
+  "files.associations": {
+    "*.tsx": "typescriptreact",
+    ".env.*": "dotenv",
+    "*.mdx": "markdown"
+  },
+
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.enableDragAndDrop": true,
+  "explorer.confirmDragAndDrop": true,
+
+  "extensions.ignoreRecommendations": true,
+
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "typescript.tsserver.log": "off",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  // "typescript.inlayHints.variableTypes.enabled": false,
+  // "javascript.inlayHints.variableTypes.enabled": false,
+  // "typescript.inlayHints.parameterNames.enabled": "all",
+  // "javascript.inlayHints.parameterNames.enabled": "all",
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  "screencastMode.onlyKeyboardShortcuts": true,
+
+  "material-icon-theme.folders.color": "#42a5f5",
+  "material-icon-theme.activeIconPack": "react_redux",
+
+  "peacock.affectSashHover": false,
+  "peacock.affectActivityBar": false,
+  "peacock.affectTitleBar": false,
+
+  "sync.gist": "f614240f516182c210f7b5b3add74438",
+  "sync.autoUpload": true,
+  "sync.autoDownload": true,
+  "sync.syncExtensions": true,
+  "sync.quietSync": true,
+
+  "redhat.telemetry.enabled": true,
+
+  "cssrem.autoRemovePrefixZero": false,
+
+  "i18n-ally.extract.autoDetect": true,
+  "i18n-ally.displayLanguage": "en",
+  "i18n-ally.fullReloadOnChanged": true,
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mjml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "xml.server.binary.trustedHashes": [
+    "8080595d4aee6c70818be8c8c8f58db8e2214082492def527ac383970e75da4c"
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true
+  }
+}
