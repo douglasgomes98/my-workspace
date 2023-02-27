@@ -1,0 +1,13 @@
+[user]
+	email = your email
+	name = your name
+
+[alias]
+  clear = ! git branch -d `git branch --merged | grep -v '^*\\|main\\|master\\|staging\\|develop'`
+	amend = ! git commit --amend --no-edit
+
+[pull]
+	rebase = false
+
+[init]
+	defaultBranch = main
