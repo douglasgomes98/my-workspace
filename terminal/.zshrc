@@ -68,6 +68,9 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
+# Homebrew
+export PATH=/opt/homebrew/bin:$PATH
+
 ### ASDF
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
