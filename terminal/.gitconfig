@@ -1,10 +1,19 @@
 [user]
-	email = your email
-	name = your name
+	email = you e-mail
+	name = you name
 
 [alias]
-  clear = ! git branch -d `git branch --merged | grep -v '^*\\|main\\|master\\|staging\\|develop'`
+	clear = ! git branch -d `git branch --merged | grep -v '^*\\|main\\|master\\|staging\\|develop'`
 	amend = ! git commit --amend --no-edit
+  sync = ! git fetch --all --prune && git pull --all && git branch -d `git branch --merged | grep -v '^*\\|main\\|master\\|staging\\|develop'`
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
 
 [pull]
 	rebase = false
