@@ -7,7 +7,8 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="spaceship"
 
 ### Plugins
-plugins=(git docker zsh-autosuggestions zsh-syntax-highlighting)
+fpath=(${ASDF_DIR}/completions $fpath)
+plugins=(git docker zsh-autosuggestions zsh-syntax-highlighting asdf)
 
 source $ZSH/oh-my-zsh.sh
 
