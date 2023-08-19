@@ -5,7 +5,9 @@
 [alias]
 	clear = ! git branch -d `git branch --merged | grep -v '^*\\|main\\|master\\|staging\\|develop'`
 	amend = ! git commit --amend --no-edit
-  sync = ! git fetch --all --prune && git pull --all && git branch -d `git branch --merged | grep -v '^*\\|main\\|master\\|staging\\|develop'`
+  	sync = ! git fetch --all --prune && git pull --all && git clear
+	dev = ! git checkout develop && git sync && git checkout -b `$1`
+	main = ! git checkout main && git sync && git checkout -b `$1`
 
 [credential "https://github.com"]
 	helper = 
