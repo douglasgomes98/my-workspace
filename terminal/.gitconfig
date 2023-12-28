@@ -8,6 +8,8 @@
   	sync = ! git fetch --all --prune && git pull --all && git clear
 	dev = ! git checkout develop && git fetch --all && git pull --all && git checkout -b `$1`
 	main = ! git checkout main && git fetch --all && git pull --all && git checkout -b `$1`
+	update = "!f() { git checkout $1 && git pull --all && git checkout - && git merge $1; }; f"
+	create = "!f() { git checkout $1 && git pull --all && git checkout - && git checkout -b $2; }; f"
 
 [credential "https://github.com"]
 	helper = 
