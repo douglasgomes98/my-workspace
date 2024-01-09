@@ -2,4 +2,6 @@
 
 ```
 wsl --install
+sudo apt install build-essential
 ```
+
