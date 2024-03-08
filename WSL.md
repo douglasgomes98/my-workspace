@@ -50,3 +50,11 @@ Reinicie o terminal
 ```
 https://windowsterminalthemes.dev/
 ```
+
+### Baixe uma nerd font
+
+Eu uso essa, deixo de recomendação.
+Lembre-se de instalar para todos os usuários.
+```
+https://www.jetbrains.com/pt-br/lp/mono/
+```
