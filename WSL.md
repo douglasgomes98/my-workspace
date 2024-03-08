@@ -23,3 +23,18 @@ sudo apt update
 sudp apt upgrade
 sudo apt install build-essential
 ```
+#### 5 - Configurando ambiente de desenvolvimento
+
+### Instale o zsh
+```
+sudo apt install zsh
+```
+Depois feche o terminal e abra novamente, pode selecionar a opção 2.
+
+### Configurando o zsh
+
+Abra o arquivo de configuração
+
+```
+ code ~/.zshrc
+```
