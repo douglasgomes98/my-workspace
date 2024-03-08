@@ -31,7 +31,7 @@ sudo apt install zsh
 ```
 Depois feche o terminal e abra novamente, pode selecionar a opção 2.
 
-### Configurando o zsh
+### Configurando o terminal com zsh
 
 Abra o arquivo de configuração
 
@@ -39,6 +39,11 @@ Abra o arquivo de configuração
  code ~/.zshrc
 ```
 Pode copiar o meu arquivo de configuração que está nesse mesmo repositório.
+Reinicie o terminal
+
+```
+ source ~/.zshrc
+```
 
 ### Escolha um tema para o windows terminal
 
