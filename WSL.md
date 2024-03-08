@@ -38,3 +38,10 @@ Abra o arquivo de configuração
 ```
  code ~/.zshrc
 ```
+Pode copiar o meu arquivo de configuração que está nesse mesmo repositório.
+
+### Escolha um tema para o windows terminal
+
+```
+https://windowsterminalthemes.dev/
+```
