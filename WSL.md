@@ -33,6 +33,15 @@ Depois feche o terminal e abra novamente, pode selecionar a opção 2.
 
 ### Configurando o terminal com zsh
 
+Instale todos esses plugins
+```
+https://ohmyz.sh/#install
+https://github.com/spaceship-prompt/spaceship-prompt
+https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+https://asdf-vm.com/guide/getting-started.html
+```
+
 Abra o arquivo de configuração
 
 ```
@@ -58,3 +67,4 @@ Lembre-se de instalar para todos os usuários.
 ```
 https://www.jetbrains.com/pt-br/lp/mono/
 ```
+
