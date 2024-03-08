@@ -14,4 +14,5 @@ processors=4
 swap=2GB
 ```
 
-### - 3 Restart na sua máquina
+#### 3 - Restart na sua máquina
+Ao reiniciar o ubuntu será instalado por padrão, ai basta seguir os passos e criar um usuário e senha para o ambiente linux (WSL)
