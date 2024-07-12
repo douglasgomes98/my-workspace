@@ -75,3 +75,16 @@ export PATH=/opt/homebrew/bin:$PATH
 ### ASDF
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+
+### CONSOLE NINJA
+PATH=~/.console-ninja/.bin:$PATH
+
+# PNPM GLOBAL
+export PNPM_HOME="/Users/douglasgomes/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+# AGENTGURU
+export AG_GIT_TOKEN=
