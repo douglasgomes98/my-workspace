@@ -77,4 +77,5 @@ asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf plugin-add pnpm
 asdf plugin-add python
 asdf plugin-add yarn
+asdf plugin-add stern https://github.com/looztra/asdf-stern
 ```
