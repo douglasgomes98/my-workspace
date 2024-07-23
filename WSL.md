@@ -68,3 +68,13 @@ Lembre-se de instalar para todos os usuários.
 https://www.jetbrains.com/pt-br/lp/mono/
 ```
 
+### Plugins ASDF
+```
+asdf plugin add awscli
+asdf plugin-add k9s https://github.com/looztra/asdf-k9s
+asdf plugin-add kubectx https://github.com/virtualstaticvoid/asdf-kubectx.git
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf plugin-add pnpm
+asdf plugin-add python
+asdf plugin-add yarn
+```
