@@ -78,4 +78,5 @@ asdf plugin-add pnpm
 asdf plugin-add python
 asdf plugin-add yarn
 asdf plugin-add stern https://github.com/looztra/asdf-stern
+asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git
 ```
