@@ -11,11 +11,13 @@
 - [Notion](https://www.notion.so/desktop)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [DBeaver](https://dbeaver.io/download/)
+- [Flameshot](https://flameshot.org/)
 
 ## Custom Fonts
 
 - [Fira Code](https://github.com/tonsky/FiraCode)
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- [0xProto](https://github.com/0xType/0xProto)
 
 ## Terminal Theming (MacOS only)
 
