@@ -80,7 +80,7 @@ export PATH=/opt/homebrew/bin:$PATH
 PATH=~/.console-ninja/.bin:$PATH
 
 # PNPM GLOBAL
-export PNPM_HOME="/Users/douglasgomes/Library/pnpm"
+export PNPM_HOME="/home/douglas/.pnpm-store"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
