@@ -62,10 +62,10 @@ https://windowsterminalthemes.dev/
 
 ### Baixe uma nerd font
 
-Eu uso essa, deixo de recomendação.
 Lembre-se de instalar para todos os usuários.
 ```
 https://www.jetbrains.com/pt-br/lp/mono/
+https://github.com/0xType/0xProto
 ```
 
 ### Plugins ASDF
@@ -79,4 +79,10 @@ asdf plugin-add python
 asdf plugin-add yarn
 asdf plugin-add stern https://github.com/looztra/asdf-stern
 asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git
+```
+### Depêndencias para instalar o Python
+```
+sudo apt-get update; sudo apt-get install make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 ```
