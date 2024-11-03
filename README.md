@@ -33,3 +33,7 @@ Just copy the "extensions.md" content and run it in the terminal, that is inside
 ## VSCode Settings
 
 Just copy the "settings.json" content and paste it in your settings.json file, that is inside the "vscode" folder in the root of the repository.
+
+## Flameshot
+
+https://flameshot.org/docs/guide/key-bindings/#on-ubuntu-and-other-gnome-based-distros
