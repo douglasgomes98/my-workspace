@@ -88,3 +88,11 @@ esac
 
 # AGENTGURU
 export AG_GIT_TOKEN=
+
+# NPM COMMANDS
+alias check-deps="ncu --format group --interactive"
+alias check-ag-deps='ncu --format group --interactive "/^@agentguru/"'
+alias zsh-update="source ~/.zshrc"
+
+# DOCKER COMMANDS
+alias docker-clean='docker system prune -a -f'
