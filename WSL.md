@@ -79,6 +79,10 @@ asdf plugin-add python
 asdf plugin-add yarn
 asdf plugin-add stern https://github.com/looztra/asdf-stern
 asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git
+https://github.com/pbr0ck3r/asdf-protoc-gen-go-grpc
+https://github.com/paxosglobal/asdf-protoc
+https://github.com/pbr0ck3r/asdf-protoc-gen-go
+https://github.com/asdf-community/asdf-golang
 ```
 ### Depêndencias para instalar o Python
 ```
