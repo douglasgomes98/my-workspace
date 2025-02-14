@@ -66,6 +66,7 @@ Lembre-se de instalar para todos os usuários.
 ```
 https://www.jetbrains.com/pt-br/lp/mono/
 https://github.com/0xType/0xProto
+https://github.com/cancng/fonts
 ```
 
 ### Plugins ASDF
