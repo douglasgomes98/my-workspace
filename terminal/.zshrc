@@ -8,7 +8,7 @@ ZSH_THEME="spaceship"
 
 ### Plugins
 fpath=(${ASDF_DIR}/completions $fpath)
-plugins=(git docker zsh-autosuggestions zsh-syntax-highlighting asdf)
+plugins=(git docker zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -45,18 +45,25 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 LS_COLORS=$LS_COLORS:'ow=01;34:' ; export LS_COLORS
 
 SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  hg            # Mercurial section (hg_branch  + hg_status)
-  node          # Node.js section
-  exec_time     # Execution time
-  line_sep      # Line break
-  # vi_mode       # Vi-mode indicator
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
+  user              # Username section
+  sudo              # Sudo indicator
+  dir               # Current directory section
+  host              # Hostname section
+  git               # Git section (git_branch + git_status)
+  hg                # Mercurial section (hg_branch  + hg_status)
+  node              # Node.js section
+  bun               # Bun section
+  deno              # Deno section
+  golang            # Go version
+  # docker          # Docker section
+  # docker_compose  # Docker section
+  # kubectl         # Kubectl context section
+  exec_time         # Execution time
+  line_sep          # Line break
+  # vi_mode         # Vi-mode indicator
+  jobs              # Background jobs indicator
+  exit_code         # Exit code section
+  char              # Prompt character
 )
 
 SPACESHIP_USER_SHOW="always" # Shows System user name before directory name
@@ -76,9 +83,6 @@ export PATH=/opt/homebrew/bin:$PATH
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
-### CONSOLE NINJA
-PATH=~/.console-ninja/.bin:$PATH
-
 # PNPM GLOBAL
 export PNPM_HOME="/home/douglas/.pnpm-store"
 case ":$PATH:" in
@@ -86,13 +90,53 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # AGENTGURU
 export AG_GIT_TOKEN=
 
 # NPM COMMANDS
-alias check-deps="ncu --format group --interactive"
-alias check-ag-deps='ncu --format group --interactive "/^@agentguru/"'
+alias check-deps="pnpx npm-check-updates --format group --interactive"
+alias check-ag-deps='pnpx npm-check-updates --format group --interactive "/^@agentguru/"'
 alias zsh-update="source ~/.zshrc"
+alias zsh-edit="code ~/.zshrc"
 
 # DOCKER COMMANDS
 alias docker-clean='docker system prune -a -f'
+
+SVC_LIST=(
+  "api-user:10000"
+  "api-agency:10013"
+  "api-image:10015"
+  "api-shopping:10003"
+  "api-fare-rules:10005"
+  "api-quote:10010"
+  "api-booking:10004"
+  "api-ticketing:10007"
+  "api-order:10008"
+  "api-share:10014"
+  "api-credit:10020"
+  "api-payment:10022"
+  "api-extras:10028"
+  "api-airline:10001"
+  "api-location:10002"
+  "api-credential:10018"
+  "api-branch:10026"
+  "pricing:10011"
+  "api-search-flights-data:10019"
+  "api-markup:10027"
+)
+
+alias port-forward-all="function _port_forward() {
+  for SVC_PORT in \$(echo \$SVC_LIST | sed 's/,/ /g'); do
+    SVC_NAME=\$(echo \$SVC_PORT | cut -d':' -f1)
+    PORT=\$(echo \$SVC_PORT | cut -d':' -f2)
+    POD_NAME=\$(kubectl get pod -l app=\$SVC_NAME -o jsonpath='{.items[0].metadata.name}')
+    echo \"Starting port-forward for \$SVC_NAME (\$POD_NAME) on port \$PORT\"
+    kubectl port-forward pod/\$POD_NAME \$PORT:\$PORT > /dev/null 2>&1 &
+  done
+  wait
+}; _port_forward"
+
+export PATH=$HOME/.local/bin:$PATH
