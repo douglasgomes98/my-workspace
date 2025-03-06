@@ -39,7 +39,11 @@ https://ohmyz.sh/#install
 https://github.com/spaceship-prompt/spaceship-prompt
 https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
-https://asdf-vm.com/guide/getting-started.html
+```
+
+Instale o ASDF
+```
+git clone https://github.com/asdf-vm/asdf.git --branch v0.14.1
 ```
 
 Abra o arquivo de configuração
