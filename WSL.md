@@ -8,8 +8,8 @@ wsl --install
 
 ```
 [wsl2]
-memory=6GB
-processors=4
+memory=8GB
+processors=10
 swap=2GB
 ```
 
